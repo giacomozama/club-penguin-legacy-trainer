@@ -1,0 +1,31 @@
+{
+  "name": "cp-legacy-trainer",
+  "version": "1.0.0",
+  "description": "Trainer for Club Penguin Legacy",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "shivs",
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "gunzip-maybe": "^1.4.2",
+    "tar-stream": "^3.0.0"
+  }
+}

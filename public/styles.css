@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #22a4f3;
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 56px;
+  background-color: #11547e;
+  z-index: 10;
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  background-color: rgb(255, 145, 0);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color ease 0.1s;
+}
+
+button:hover {
+  background-color: rgb(255, 208, 0);
+}
+
+.tab {
+  display: flex;
+  flex: 1;
+}
+
+iframe {
+  display: flex;
+  border: none;
+  flex: 1;
+}
+
+#tab-hacks {
+  padding: 16px;
+}
+
+#tab-hacks-inner {
+  flex: 1;
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #11547e;
+  color: white;
+  overflow: auto;
+}
+
+#tab-hacks #hacks {
+  display: flex;
+  flex-direction: column;
+}
+
+#tab-hacks input[type="checkbox"] {
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 32px;
+  cursor: pointer;
+  position: relative;
+}
+
+#tab-hacks label {
+  cursor: pointer;
+}
+
+#tab-hacks input[type="checkbox"]::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 6px;
+  left: 6px;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 145, 0);
+  border-radius: 6px;
+  margin-right: 32px;
+  transition: opacity ease 0.2s, background-color ease 0.2s;
+}
+
+#tab-hacks input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+#tab-hacks input[type="checkbox"]:hover::after {
+  background-color: rgb(255, 208, 0);
+}
+
+#tab-hacks .hack {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+#tab-hacks .hack .hack-description {
+  display: none;
+  font-size: 1.2rem;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#tab-hacks .hack:hover .hack-description {
+  position: fixed;
+  left: 32px;
+  bottom: 24px;
+  right: 32px;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#tab-hacks .hacks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#tab-hacks .hacks-header button {
+  margin-right: 0;
+}
+
+#tab-holder {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 56px);
+  top: 56px;
+  width: 200vw;
+  overflow: hidden;
+  transition: left linear .3s;
+  position: absolute;
+}
+
+#tab-holder .tab {
+  display: flex;
+  width: 100vw;
+  padding: 16px;
+  flex: 1;
+}
+
+#tab-holder.show-play {
+  left: -100vw;
+}
+
+#tab-holder.show-hacks {
+  left: 0;
+}
