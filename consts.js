@@ -1,0 +1,1 @@
+exports.CDN_URL = "https://cpl-prod.b-cdn.net";

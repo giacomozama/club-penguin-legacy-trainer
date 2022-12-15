@@ -2,7 +2,7 @@ const fs = require("fs");
 const http = require("http");
 const https = require("https");
 
-const downloadFile = async (url, targetFile) =>
+exports.downloadFile = async (url, targetFile) =>
   await new Promise((resolve, reject) => {
     (url.startsWith("https") ? https : http)
       .get(url, (response) => {
@@ -26,5 +26,3 @@ const downloadFile = async (url, targetFile) =>
         reject(error);
       });
   });
-
-exports.downloadFile = downloadFile;

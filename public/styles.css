@@ -44,11 +44,6 @@ button:hover {
   background-color: rgb(255, 208, 0);
 }
 
-.tab {
-  display: flex;
-  flex: 1;
-}
-
 iframe {
   display: flex;
   border: none;
@@ -171,9 +166,8 @@ iframe {
 
 #tab-holder .tab {
   display: flex;
-  width: 100vw;
-  padding: 16px;
-  flex: 1;
+  box-sizing: border-box;
+  flex: 0 0 100vw;
 }
 
 #tab-holder.show-play {
