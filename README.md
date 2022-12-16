@@ -13,7 +13,7 @@ Back in the day, I was known in the Club Penguin hacking community as PenXZ. In 
 **Hijack Ruffle to edit variables or call functions?** NOT NEEDLESSLY COMPLICATED ENOUGH.
 
 
-Yes, you heard it right. We're doing Club Penguin hacks in 2022, and we're doing them in a suboptimal, yet somewhat innovative way. The private server is gonna be Club Penguin Legacy, the reason being it's the first one which I got these to work on.
+Yes, you heard it right. We're doing Club Penguin hacks in 2022, and we're doing them in a suboptimal, yet somewhat innovative way. The private server is gonna be Club Penguin Legacy, the reason being it's the first one on which I got this to work.
 
 
 **So, how does this trainer work?**
@@ -22,7 +22,7 @@ This trainer is an electron app that does three things:
 
 1) Downloads and patches .swf files by disassembling and reassembling them with Flasm
 2) Runs a local server for serving the patched .swf files
-3) Allows you to play the game while redirecting all requests to patched .swf files to your local server
+3) Allows you to play the game while redirecting all requests for .swf files that have been patched to your local server
 
 You can patch the .swf files to change a lot of stuff. Right now, a single hack is available, which makes it so that HydroHopper always rewards 1000 coins on exit.
 
