@@ -1,9 +1,10 @@
 const { session } = require("electron");
 const path = require("path");
 const http = require("http");
+const fs = require("fs");
 
 const { CDN_URL } = require("./consts");
-const { availableHacks } = require("./config");
+const { availableHacks, currentConfig } = require("./config");
 
 const setupRequestListener = () => {
   const hacksByUrl = {};
@@ -14,7 +15,7 @@ const setupRequestListener = () => {
   
   session.defaultSession.webRequest.onBeforeRequest((details, callback) => {
     const hack = hacksByUrl[details.url];
-    if (!hack || !config[hack.id]) {
+    if (!hack || !currentConfig[hack.id]) {
       callback({});
       return;
     }

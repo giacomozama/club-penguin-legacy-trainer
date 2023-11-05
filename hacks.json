@@ -3,7 +3,7 @@
     "id": "hydro-hopper-coins",
     "title": "HydroHopper Coins Hack",
     "description": "HydroHopper always rewards 1000 coins.",
-    "url": "https://cpl-prod.b-cdn.net/assets/media/swf/games/hydro/HydroHopper.swf",
+    "url": "https://media.cplegacy.net/assets/media/swf/games/hydro/HydroHopper.swf",
     "substitutions": [
       {
         "replaceLines": [377, 392],
