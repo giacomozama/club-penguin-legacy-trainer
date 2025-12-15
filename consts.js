@@ -1,1 +1,1 @@
-exports.CDN_URL = "https://media.cplegacy.net";
+exports.CDN_URL = "https://media.cplegacy.com";

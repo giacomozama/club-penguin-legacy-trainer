@@ -3,7 +3,7 @@
     "id": "hydro-hopper-coins",
     "title": "HydroHopper 1K Coins Hack",
     "description": "HydroHopper always rewards 1000 coins.",
-    "url": "https://media.cplegacy.net/assets/media/swf/games/hydro/HydroHopper.swf",
+    "url": "https://media.cplegacy.com/assets/media/swf/games/hydro/HydroHopper.swf",
     "substitutions": [
       {
         "replaceLines": [377, 392],
@@ -23,7 +23,7 @@
     "id": "catchin-waves-coins",
     "title": "Catchin' Waves 5K Coins Hack",
     "description": "Catchin' Waves rewards 5000 coins when exiting the game before selecting a mode.",
-    "url": "https://media.cplegacy.net/assets/media/swf/games/waves/CatchinWaves.swf",
+    "url": "https://media.cplegacy.com/assets/media/swf/games/waves/CatchinWaves.swf",
     "substitutions": [
       {
         "replaceLines": [9848, 9856],
